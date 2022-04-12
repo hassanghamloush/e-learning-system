@@ -1,7 +1,6 @@
 steps:
-    - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: 'bash'
-    args:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
         - '-c'
         - |
           gcloud config set app/cloud_build_timeout 3600 \
